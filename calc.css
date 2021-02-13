@@ -1,0 +1,928 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 10;
+    font-size: 20px;
+    font-family: monospace;
+    border-style: none;
+    transition: all 1s;
+    text-shadow: 0 0 12px rgb(230, 71, 111);
+}
+body{
+    /*background: linear-gradient(90deg,rgb(30, 215, 228),rgb(230, 162, 38));*/
+    background-color: black;
+}
+.calculator {
+    margin-top: 16%;
+    margin-left: 610px;
+    height: 229px;
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+}
+.head h1 {
+    font-size: 30px;
+    position: absolute;
+    top: 0px;
+    text-decoration: underline;
+    text-shadow: 0 0 10px white;
+    color: white;
+    font-style: italic;
+}
+.abhinav h1 {
+    font-size: 30px;
+    position: absolute;
+    top: 0px;
+    right: 6px;
+    font-style: italic;
+    color: white;
+    text-shadow: 0 0 10px white;
+    text-decoration: underline;
+}
+.first {
+    padding-top: 70px;
+    height: 100px;
+    width: 200px;
+    text-align: right;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    position: absolute;
+    text-shadow: none;
+    left: 610px;
+    bottom: 438px;
+    transition: none;
+
+}
+.equal {
+    width: 100px;
+}
+.operators {
+    display: grid;
+    height: 250px;
+    grid-template-columns: 50px;
+    margin-top: -229px;
+    margin-left: 760px;
+}
+.clear {
+    width: 100px;
+    z-index: 2;
+    text-decoration: none;
+    background-color: rgb(230, 71, 111);
+    font-weight: bold;
+}
+.theme #dark {
+    text-shadow: none;
+    top: 10px;
+    display: none;
+    left: 50%;
+    color: wheat;
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.theme #ligth {
+    text-shadow: none;
+    top: 10px;
+    left: 49.5%;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.theme #dark:hover {
+    background-color: black;
+    color: white;
+}
+.theme #ligth:hover {
+    background-color: black;
+    color: white;
+}
+.down {
+    text-shadow: none;
+    color: black;
+    position: absolute;
+    left: 770px;
+    top: 140px;
+    z-index: 1;
+}
+.most-down {
+    text-shadow: none;
+    position: absolute;
+    top: 160px;
+    left: 788px;
+}
+.del:hover {
+    background-color: orange;
+}
+.clear:hover {
+    background-color: rgb(206, 18, 65);
+}
+.plus:hover {
+    background-color: orange;
+}
+.minus:hover {
+    background-color: orange;
+}
+.multiply:hover {
+    background-color: orange;
+}
+.divide:hover {
+    background-color: orange;
+}
+.point:hover {
+    background-color: orange;
+}
+.one:hover {
+    background-color: orange;
+}
+.two:hover {
+    background-color: orange;
+}
+.three:hover {
+    background-color: orange;
+}
+.four:hover {
+    background-color: orange;
+}
+.five:hover {
+    background-color: orange;
+}
+.six:hover {
+    background-color: orange;
+}
+.seven:hover {
+    background-color: orange;
+}
+.eight:hover {
+    background-color: orange;
+}
+.nine:hover {
+    background-color: orange;
+}
+.zero:hover {
+    background-color: orange;
+}
+.equal:hover {
+    background-color: orange;
+}
+/* moto G4 */
+@media (min-width: 359px) and (max-width: 361px) {
+        #developer {
+            font-size: 20px;
+            left: 250px;
+        }
+        #cal {
+            font-size: 20px;
+        }
+        #ligth {
+            font-size: 20px;
+            left: 143px !important;
+            top: 3px !important;
+        }
+        #dark {
+            font-size: 20px;
+            left: 155px !important;
+            top: 3px !important;
+        }
+        .calculator {
+            margin-top: 67% !important;
+            margin-left: 87px;
+            height: 229px;
+            display: grid;
+            grid-template-columns: 50px 50px 50px;
+            grid-template-rows: 50px 50px 50px 50px 50px;
+        }
+        .head h1 {
+            font-size: 30px;
+            position: absolute;
+            top: 0px;
+            text-decoration: underline;
+            text-shadow: 0 0 10px white;
+            color: white;
+            font-style: italic;
+        }
+        .abhinav h1 {
+            font-size: 30px;
+            position: absolute;
+            top: 0px;
+            right: 60px;
+            font-style: italic;
+            color: white;
+            text-shadow: 0 0 10px white;
+            text-decoration: underline;
+        }
+        .first {
+            padding-top: 70px;
+            height: 80px;
+            width: 200px;
+            text-align: right;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            position: absolute;
+            text-shadow: none;
+            left: 87px;
+            top: 91px !important;
+            transition: none;
+        
+        }
+        .equal {
+            width: 100px;
+        }
+        .operators {
+            display: grid;
+            height: 250px;
+            grid-template-columns: 50px;
+            margin-top: -229px;
+            margin-left: 237px;
+        }
+        .clear {
+            width: 100px;
+            z-index: 2;
+            text-decoration: none;
+            background-color: rgb(230, 71, 111);
+            font-weight: bold;
+        }
+        .theme #dark {
+            text-shadow: none;
+            top: 10px;
+            display: none;
+            left: 50%;
+            color: wheat;
+            position: absolute;
+            border-radius: 10px;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .theme #ligth {
+            text-shadow: none;
+            top: 10px;
+            left: 49.5%;
+            color: rgb(255, 255, 255);
+            position: absolute;
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .theme #dark:hover {
+            background-color: black;
+            color: white;
+        }
+        .theme #ligth:hover {
+            background-color: black;
+            color: white;
+        }
+        .down {
+            text-shadow: none;
+            color: black;
+            position: absolute;
+            left: 770px;
+            top: 140px;
+            z-index: 1;
+        }
+        .most-down {
+            text-shadow: none;
+            position: absolute;
+            top: 160px;
+            left: 788px;
+        }
+}
+/* Pixel 2 */
+@media (min-width: 410px) and (max-width: 412px) {
+    #developer {
+        font-size: 20px;
+        left: 240px;
+        right: 0px;
+    }
+    #cal {
+        font-size: 20px;
+    }
+    #ligth {
+        font-size: 20px;
+        left: 143px !important;
+        top: 3px !important;
+    }
+    #dark {
+        font-size: 20px;
+        left: 155px !important;
+        top: 3px !important;
+    }
+    .calculator {
+        margin-top: 67% !important;
+        margin-left: 87px;
+        height: 229px;
+        display: grid;
+        grid-template-columns: 50px 50px 50px;
+        grid-template-rows: 50px 50px 50px 50px 50px;
+    }
+    .head h1 {
+        font-size: 30px;
+        position: absolute;
+        top: 0px;
+        text-decoration: underline;
+        text-shadow: 0 0 10px white;
+        color: white;
+        font-style: italic;
+    }
+    .abhinav h1 {
+        font-size: 30px;
+        position: absolute;
+        top: 0px;
+        right: 60px;
+        font-style: italic;
+        color: white;
+        text-shadow: 0 0 10px white;
+        text-decoration: underline;
+    }
+    .first {
+        padding-top: 70px;
+        height: 80px;
+        width: 200px;
+        text-align: right;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        position: absolute;
+        text-shadow: none;
+        left: 87px;
+        top: 125px !important;
+        transition: none;
+    
+    }
+    .equal {
+        width: 100px;
+    }
+    .operators {
+        display: grid;
+        height: 250px;
+        grid-template-columns: 50px;
+        margin-top: -229px;
+        margin-left: 237px;
+    }
+    .clear {
+        width: 100px;
+        z-index: 2;
+        text-decoration: none;
+        background-color: rgb(230, 71, 111);
+        font-weight: bold;
+    }
+    .theme #dark {
+        text-shadow: none;
+        top: 10px;
+        display: none;
+        left: 50%;
+        color: wheat;
+        position: absolute;
+        border-radius: 10px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .theme #ligth {
+        text-shadow: none;
+        top: 10px;
+        left: 49.5%;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .theme #dark:hover {
+        background-color: black;
+        color: white;
+    }
+    .theme #ligth:hover {
+        background-color: black;
+        color: white;
+    }
+    .down {
+        text-shadow: none;
+        color: black;
+        position: absolute;
+        left: 770px;
+        top: 140px;
+        z-index: 1;
+    }
+    .most-down {
+        text-shadow: none;
+        position: absolute;
+        top: 160px;
+        left: 788px;
+    }
+}
+/* iphone 5/SE */
+@media (min-width: 319px) and (max-width: 321px) {
+    #developer {
+        font-size: 20px;
+        left: 230px;
+        right: 0px;
+    }
+    #cal {
+        font-size: 20px;
+    }
+    #ligth {
+        font-size: 18px;
+        left: 140px !important;
+        top: 3px !important;
+    }
+    #dark {
+        font-size: 20px;
+        left: 155px !important;
+        top: 3px !important;
+    }
+    .calculator {
+        margin-top: 75% !important;
+        margin-left: 60px;
+        height: 229px;
+        display: grid;
+        grid-template-columns: 50px 50px 50px;
+        grid-template-rows: 50px 50px 50px 50px 50px;
+    }
+    .head h1 {
+        font-size: 30px;
+        position: absolute;
+        top: 0px;
+        text-decoration: underline;
+        text-shadow: 0 0 10px white;
+        color: white;
+        font-style: italic;
+    }
+    .abhinav h1 {
+        font-size: 30px;
+        position: absolute;
+        top: 0px;
+        right: 60px;
+        font-style: italic;
+        color: white;
+        text-shadow: 0 0 10px white;
+        text-decoration: underline;
+    }
+    .first {
+        padding-top: 70px;
+        height: 80px;
+        width: 200px;
+        text-align: right;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        position: absolute;
+        text-shadow: none;
+        left: 60px;
+        top: 90px !important;
+        transition: none;
+    
+    }
+    .equal {
+        width: 100px;
+    }
+    .operators {
+        display: grid;
+        height: 250px;
+        grid-template-columns: 50px;
+        margin-top: -229px;
+        margin-left: 210px;
+    }
+    .clear {
+        width: 100px;
+        z-index: 2;
+        text-decoration: none;
+        background-color: rgb(230, 71, 111);
+        font-weight: bold;
+    }
+    .theme #dark {
+        text-shadow: none;
+        top: 10px;
+        display: none;
+        left: 50%;
+        color: wheat;
+        position: absolute;
+        border-radius: 10px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .theme #ligth {
+        text-shadow: none;
+        top: 10px;
+        left: 49.5%;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .theme #dark:hover {
+        background-color: black;
+        color: white;
+    }
+    .theme #ligth:hover {
+        background-color: black;
+        color: white;
+    }
+    .down {
+        text-shadow: none;
+        color: black;
+        position: absolute;
+        left: 770px;
+        top: 140px;
+        z-index: 1;
+    }
+    .most-down {
+        text-shadow: none;
+        position: absolute;
+        top: 160px;
+        left: 788px;
+    }
+}
+/* iphone 6/7/8 */
+@media (min-width: 374px) and (max-width: 376px) {
+    #developer {
+        font-size: 20px;
+        left: 290px;
+        right: 0px;
+    }
+    #cal {
+        font-size: 20px;
+    }
+    #ligth {
+        font-size: 20px;
+        left: 143px !important;
+        top: 3px !important;
+    }
+    #dark {
+        font-size: 20px;
+        left: 155px !important;
+        top: 3px !important;
+    }
+    .calculator {
+        margin-top: 67% !important;
+        margin-left: 87px;
+        height: 229px;
+        display: grid;
+        grid-template-columns: 50px 50px 50px;
+        grid-template-rows: 50px 50px 50px 50px 50px;
+    }
+    .head h1 {
+        font-size: 30px;
+        position: absolute;
+        top: 0px;
+        text-decoration: underline;
+        text-shadow: 0 0 10px white;
+        color: white;
+        font-style: italic;
+    }
+    .abhinav h1 {
+        font-size: 30px;
+        position: absolute;
+        top: 0px;
+        right: 60px;
+        font-style: italic;
+        color: white;
+        text-shadow: 0 0 10px white;
+        text-decoration: underline;
+    }
+    .first {
+        padding-top: 70px;
+        height: 80px;
+        width: 200px;
+        text-align: right;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        position: absolute;
+        text-shadow: none;
+        left: 87px;
+        top: 101px !important;
+        transition: none;
+    
+    }
+    .equal {
+        width: 100px;
+    }
+    .operators {
+        display: grid;
+        height: 250px;
+        grid-template-columns: 50px;
+        margin-top: -229px;
+        margin-left: 237px;
+    }
+    .clear {
+        width: 100px;
+        z-index: 2;
+        text-decoration: none;
+        background-color: rgb(230, 71, 111);
+        font-weight: bold;
+    }
+    .theme #dark {
+        text-shadow: none;
+        top: 10px;
+        display: none;
+        left: 50%;
+        color: wheat;
+        position: absolute;
+        border-radius: 10px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .theme #ligth {
+        text-shadow: none;
+        top: 10px;
+        left: 49.5%;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .theme #dark:hover {
+        background-color: black;
+        color: white;
+    }
+    .theme #ligth:hover {
+        background-color: black;
+        color: white;
+    }
+    .down {
+        text-shadow: none;
+        color: black;
+        position: absolute;
+        left: 770px;
+        top: 140px;
+        z-index: 1;
+    }
+    .most-down {
+        text-shadow: none;
+        position: absolute;
+        top: 160px;
+        left: 788px;
+    }
+}
+/* iphone 6/7/8 Plus */
+@media (min-width: 413px) and (max-width: 415px) {
+    #developer {
+        font-size: 20px;
+        left: 310px;
+        right: 0px;
+    }
+    #cal {
+        font-size: 20px;
+    }
+    #ligth {
+        font-size: 20px;
+        left: 163px !important;
+        top: 3px !important;
+    }
+    #dark {
+        font-size: 20px;
+        left: 169px !important;
+        top: 3px !important;
+    }
+    .calculator {
+        margin-top: 67% !important;
+        margin-left: 87px;
+        height: 229px;
+        display: grid;
+        grid-template-columns: 50px 50px 50px;
+        grid-template-rows: 50px 50px 50px 50px 50px;
+    }
+    .head h1 {
+        font-size: 30px;
+        position: absolute;
+        top: 0px;
+        text-decoration: underline;
+        text-shadow: 0 0 10px white;
+        color: white;
+        font-style: italic;
+    }
+    .abhinav h1 {
+        font-size: 30px;
+        position: absolute;
+        top: 0px;
+        right: 60px;
+        font-style: italic;
+        color: white;
+        text-shadow: 0 0 10px white;
+        text-decoration: underline;
+    }
+    .first {
+        padding-top: 70px;
+        height: 80px;
+        width: 200px;
+        text-align: right;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        position: absolute;
+        text-shadow: none;
+        left: 87px;
+        top: 127px !important;
+        transition: none;
+    
+    }
+    .equal {
+        width: 100px;
+    }
+    .operators {
+        display: grid;
+        height: 250px;
+        grid-template-columns: 50px;
+        margin-top: -229px;
+        margin-left: 237px;
+    }
+    .clear {
+        width: 100px;
+        z-index: 2;
+        text-decoration: none;
+        background-color: rgb(230, 71, 111);
+        font-weight: bold;
+    }
+    .theme #dark {
+        text-shadow: none;
+        top: 10px;
+        display: none;
+        left: 50%;
+        color: wheat;
+        position: absolute;
+        border-radius: 10px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .theme #ligth {
+        text-shadow: none;
+        top: 10px;
+        left: 49.5%;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .theme #dark:hover {
+        background-color: black;
+        color: white;
+    }
+    .theme #ligth:hover {
+        background-color: black;
+        color: white;
+    }
+    .down {
+        text-shadow: none;
+        color: black;
+        position: absolute;
+        left: 770px;
+        top: 140px;
+        z-index: 1;
+    }
+    .most-down {
+        text-shadow: none;
+        position: absolute;
+        top: 160px;
+        left: 788px;
+    }
+}
+/* redmi note-8 */
+@media (min-width: 392px) and (max-width: 394px) {
+    #developer {
+        font-size: 20px;
+        left: 290px;
+        right: 0px;
+    }
+    #cal {
+        font-size: 20px;
+    }
+    #ligth {
+        font-size: 20px;
+        left: 163px !important;
+        top: 3px !important;
+    }
+    #dark {
+        font-size: 20px;
+        left: 165px !important;
+        top: 3px !important;
+    }
+    .calculator {
+        margin-top: 67% !important;
+        margin-left: 87px;
+        height: 229px;
+        display: grid;
+        grid-template-columns: 50px 50px 50px;
+        grid-template-rows: 50px 50px 50px 50px 50px;
+    }
+    .head h1 {
+        font-size: 30px;
+        position: absolute;
+        top: 0px;
+        text-decoration: underline;
+        text-shadow: 0 0 10px white;
+        color: white;
+        font-style: italic;
+    }
+    .abhinav h1 {
+        font-size: 30px;
+        position: absolute;
+        top: 0px;
+        right: 60px;
+        font-style: italic;
+        color: white;
+        text-shadow: 0 0 10px white;
+        text-decoration: underline;
+    }
+    .first {
+        padding-top: 70px;
+        height: 80px;
+        width: 200px;
+        text-align: right;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        position: absolute;
+        text-shadow: none;
+        left: 87px;
+        top: 113px !important;
+        transition: none;
+    
+    }
+    .equal {
+        width: 100px;
+    }
+    .operators {
+        display: grid;
+        height: 250px;
+        grid-template-columns: 50px;
+        margin-top: -229px;
+        margin-left: 237px;
+    }
+    .clear {
+        width: 100px;
+        z-index: 2;
+        text-decoration: none;
+        background-color: rgb(230, 71, 111);
+        font-weight: bold;
+    }
+    .theme #dark {
+        text-shadow: none;
+        top: 10px;
+        display: none;
+        left: 50%;
+        color: wheat;
+        position: absolute;
+        border-radius: 10px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .theme #ligth {
+        text-shadow: none;
+        top: 10px;
+        left: 49.5%;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .theme #dark:hover {
+        background-color: black;
+        color: white;
+    }
+    .theme #ligth:hover {
+        background-color: black;
+        color: white;
+    }
+    .down {
+        text-shadow: none;
+        color: black;
+        position: absolute;
+        left: 770px;
+        top: 140px;
+        z-index: 1;
+    }
+    .most-down {
+        text-shadow: none;
+        position: absolute;
+        top: 160px;
+        left: 788px;
+    }
+}

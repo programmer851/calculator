@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="calc.css">
+    <script src="calculator.js"></script>
+</head>
+
+<body>
+    <div class="theme">
+        <button id="dark" onclick="dark()">DARK</button>
+        <button id="ligth" onclick="ligth()">Ligth</button>
+    </div>
+    <div class="head">
+        <h1 id="cal">Calculator</h1>
+    </div>
+    <div class="abhinav">
+        <h1 id="developer">Made By-Abhinav</h1>
+    </div>
+    <div class="box">
+        <span class="first"></span>
+        <div class="calculator">
+
+            <button class="clear" onclick="Clear()">AC</button>
+            <br>
+            <button class="one" type="button" onclick="One()">1</button>
+            <button class=two onclick="second()">2</button>
+            <button class=three onclick="third()">3</button>
+            <button class=four onclick="fourth()">4</button>
+            <button class=five onclick="fifth()">5</button>
+            <button class=six onclick="sixth()">6</button>
+            <button class=seven onclick="seventh()">7</button>
+            <button class=eight onclick="eight()">8</button>
+            <button class=nine onclick="ninth()">9</button>
+            <button class=zero onclick="Zero()">0</button>
+            <button class=point onclick="decimal()">.</button>
+            <button class=equal onclick="total()">=</button>
+        </div>
+        <div class="operators">
+            <button class=plus onclick="add()">+</button>
+            <button class=minus onclick="subtract()">-</button>
+            <button class=multiply onclick="into()">x</button>
+            <button class=divide onclick="upon()">/</button>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
